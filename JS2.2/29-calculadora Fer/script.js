@@ -51,5 +51,5 @@ function multi (){
     }
 }
 multi();
-/* prba */
+/* prba, prueba */
 // para comentar presionar CTRL + }
