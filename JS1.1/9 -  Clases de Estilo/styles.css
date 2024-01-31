@@ -1,0 +1,14 @@
+p{
+    text-align: center;
+}
+
+.normal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.destacado{
+    background-color: khaki;
+    padding: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}

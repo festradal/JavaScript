@@ -1,0 +1,26 @@
+.calc {
+    background-color: burlywood;
+    width: 250px;
+    height: 280px;
+    /*align-items: center;
+    align-content: center;*/
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    width: 50px;
+    height: 15px;
+}
+
+button {
+    /*width: 100px;
+    height: 100px;*/
+    background-color: brown;
+    align-content: end;
+}
+
+
+.operador {
+    margin: 10px 0 0 10px;
+}

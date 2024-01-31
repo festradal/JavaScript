@@ -1,0 +1,21 @@
+h1:hover{
+    background-color: brown;
+}
+
+div p{
+    color: green;
+    font-weight: bolder;
+}
+
+ol > li{
+    font-weight: bolder;
+    color: red;
+}
+
+h2 ~ h3{
+    background-color: lightskyblue;
+}
+
+div p[align="left"]:hover{
+    background-color: gold;
+}

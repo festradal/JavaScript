@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <style>
+        h1{
+            color:red;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="tiempoElegido">
+    <button onclick="comenzarTiempo()">Alarma</button>
+    <h1 id="textoAlarma">APAGADO</h1>
+
+    <script>
+        let elementoSegundos = document.getElementById("tiempoElegido"); // la variable elementoSegundos captura al input llamado tiempoElegido
+        let elementoTextoAlarma = document.getElementById("textoAlarma"); //La variable elmenetoTextoAlarma captura al h1 para ser manipulado posteriormente
+
+        function comenzarTiempo(){
+            //setTimeout Sirve para llamar a una funcion luego de un conteo regresivo de  multiplos de 100
+            setTimeout(tiempoCumplido, 1000*elementoSegundos.value); // setTimeout es un método de los muchos de js
+        }
+
+        //Funcion tiempoCumplido nos servirá para manejar la acción luego de que se cumpla el setTimeout
+        function tiempoCumplido(){
+            elementoTextoAlarma.textContent = "ENCENDIDO"; //Cambiamos su texto a encendido
+            elementoTextoAlarma.style.color = "green"; // cambiamos su color a verde
+            elementoTextoAlarma.style.backgroundColor = "beige"; //cambiamos su fondo a beige
+            elementoTextoAlarma.style.textAlign = "center";
+        }
+    </script>
+</body>
+</html>

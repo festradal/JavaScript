@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora prueba Fernando</title>
+        <link rel="stylesheet" href="styless.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="calc">
+            <div class="ingreso">
+                <h1>Calculadora</h1>
+                <input type="text" name id="campo1">
+                <input type="text" name id="campo2">
+            </div>
+            <div class="operador">
+                <button onclick="suma()"><strong>+</strong></button>
+            </div>
+            <div class="res">
+                <h1>Resultado</h1>
+                <input type="text" id="resultado">
+            </div>
+        </div>
+
+        
+        <!--estos efectos se logran desde HTML utilizando estas propiedades-->
+        <div onmouseout="this.style.color='black'"
+            onmouseover="this.style.color='red'">
+            Este es un texto que cambia de color. Pruébalo!</div>
+    </body>
+</html>

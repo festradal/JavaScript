@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Ingresa tu nombre</p>
+    <input type="number" id="edadUsuario">
+    <button onclick="mostrarEdad()">Muestrame tu edad</button>
+    <br>
+    <label id="edad">No se tu edad</label>
+    <script>
+        function mostrarEdad(){
+            let edad = document.getElementById("edadUsuario");
+            let salida = document.getElementById("edad");
+            let mensaje = "Tu tienes "+edad.value+" años de edad";
+
+            salida.textContent = mensaje;
+
+        }
+    </script>
+</body>
+</html>
