@@ -1,3 +1,9 @@
-for(let c=0; c<=10;c+=2){
-    console.log(c);
+let n=0
+while(true){//mientras  
+    console.log(n+". Hola Mundo");
+    
+    if( n == 100){
+        break;
+    }
+    n++;
 }
