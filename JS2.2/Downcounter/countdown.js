@@ -23,14 +23,14 @@ const getRemainTime = (deadline) => {
     }
 };
 
-//console.log(getRemainTime('Feb 16 2024 12:39:44 GMT-0600'));
+console.log(getRemainTime('Feb 16 2024 12:39:44 GMT-0600'));
 
 const countdown = (deadline, elem, finalMessage) => {
     const el = document.getElementById(elem);
 
     const timerUpdate = setInterval( () => {
         let t = getRemainTime(deadline);
-        el.innerHTML = `${t.remainDays}`;
+        el.innerHTML = `${t.remainDays} Días ${t.remainHours} Horas ${t.remainMinutes} Minutos ${t.remainSeconds} Segundos`;
 
         if (t.remainTime <= 1) {
             clearInterval(timerUpdate);
@@ -39,4 +39,4 @@ const countdown = (deadline, elem, finalMessage) => {
     }, 1000)
 };
 
-countdown('Mar 15 2024 10:54:06 GMT-0600', 'clock', 'Feliz 2024');
+countdown('Feb 16 2024 13:57:06 GMT-0600', 'clock', 'Feliz 2024');
