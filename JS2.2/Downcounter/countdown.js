@@ -39,4 +39,4 @@ const countdown = (deadline, elem, finalMessage) => {
     }, 1000)
 };
 
-countdown('Feb 16 2024 13:57:06 GMT-0600', 'clock', 'Feliz 2024');
+countdown('Feb 29 2024 23:00:06 GMT-0600', 'clock', 'Feliz 2024');
