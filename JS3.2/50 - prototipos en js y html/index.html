@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipos en JS y HTML</title>
+</head>
+<body>
+
+    <div id="resultado"></div>
+
+    <script>
+        //Definición del prototio Persona
+        function Persona(nombre, edad){ //parametros normales
+            this.nombre = nombre;
+            this.edad = edad;
+
+        }
+
+        //Agregamos un método al prototipo Persona
+        Persona.prototype.saludar = function(){
+            return `Hola, soy ${this.nombre} y tengo ${this.edad} años`;
+        }
+
+        //Creamos instancias de persona
+        var persona1 = new Persona("Juan",30); //crea el objeto persona1
+        var persona2 = new Persona("María",25); //crea el objeto persona2
+        var persona3 = new Persona("Luis",36);
+        var persona4 = new Persona("Pablo",16);
+
+        //Obtenemos el elemento del DOM donde mostraremos el resultado
+        var elementoResultado = document.getElementById("resultado");
+
+        //Mostramos el saludo de las instancias en el DOM
+        elementoResultado.innerHTML += "<p>" + persona1.saludar() + "</p>";
+        elementoResultado.innerHTML += "<p>" + persona2.saludar() + "</p>";
+        elementoResultado.innerHTML += "<b>" + persona3.saludar() + "<br>";
+        elementoResultado.innerHTML += "<b>" + persona4.saludar() ;
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas de Prototipos en JS</title>
+</head>
+<body>
+    <script>
+        //Definicion del prototipo Animal
+        function Animal(nombre){
+            this.nombre = nombre;
+        }
+
+        //Método común para todos los animales
+        Animal.prototype.saludar = function(){
+            return `Hola, soy un animal llamado ${this.nombre}`
+        }
+
+        // Definición del prototipo Mamifero que hereda de Animal
+        function Mamifero(nombre, tipoPelo){
+            Animal.call(this.nombre) // Llamada al constructor de Animal
+            this.tipoPelo = tipoPelo; 
+        }
+
+        // Establecemos la cadena de prototipos: Mamífero que hereda de Animal
+        Mamifero.prototype = Object.create(Animal.prototype);
+        Mamifero.prototype.constructor = Mamifero; // corrección del constructor
+
+        //Nuevo método específico para Mamífero
+        Mamifero.prototype.amamantar = function(){
+            return `${this.nombre} está amamantando a sus crías`
+        }
+
+        //Crear un objeto mamífero
+        var leon = new Mamifero("León","Corto");
+
+        //Mostrar saludo y acción específica del Mamífero en el DOM
+        var elementoResultado = document.body;
+
+        elementoResultado.innerHTML += "<p>"+ leon.saludar()+"</p>";
+        elementoResultado.innerHTML += "<p>"+ leon.amamantar()+"</p>";
+
+    </script>
+</body>
+</html>
