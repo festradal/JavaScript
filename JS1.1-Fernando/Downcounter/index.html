@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="countdown.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.js" integrity="sha512-P0pdbdTHc6MzepVlBNGN/c+lBFfFk0ISSc/GLLnQzR5QzfgVdQMvOhVK4RvnhylawHSn2QxgAjb3f+zxSMfyNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/excanvas.js" integrity="sha512-MNHfHZ07FhfcVwynE15AiS69hD5V5q3bgAj4bvIFm3u4b35Rs7b83Z0BTpLRvBu2ph3rcZ6AxdKvx3DNY6Sg4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.js" integrity="sha512-K0pOiOu3G8R2xDzk0RsZHUywWA4nWr/1Dg09qbQRGn3tY3Ra9hzIvVtp71GeM/uxqPPM38KA+GAOB4vgNTWOtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.min.js" integrity="sha512-xeQFOWENzkyJSDlwwlX5lsFHfFL3Y3idnpBZYF/SCRxZz03HW/fpd5Lpd78SzjAzp/iBeWJ4PQRKlxWeYqQlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--<div>
+        <script>
+            let boxSz = 200;
+            let sphereRadius = boxSz - boxSz / 8;
+
+            function setup() {
+                createCanvas(windowWidth, windowHeight, WEBGL);
+            }
+
+            function draw() {
+                background(35, 25, 90);
+                rotateY(frameCount * 0.01);
+                push();
+                rotateX(frameCount * 0.01);
+                rotateZ(frameCount * 0.02);
+
+                for (let s = 0; s <= 180; s++) {
+                    let radianS = radians(s);
+                    let z = sphereRadius * cos(radianS);
+                    for (let t = 0; t < 360; t += 12) {
+                        let radianT = radians(t);
+                        let radius = sphereRadius * sin(radianS);
+                        let x = radius * cos(radianT);
+                        let y = radius * sin(radianT);
+                        push();
+                        translate(x, y, z);
+                        sphere(5, 8);
+                        pop();
+                    }
+                }
+                pop();
+            }
+        </script>
+    </div>-->
+    <script>
+        let date = new Date();
+        document.body.innerHTML = "<h1>La hora actual es:  " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+        "</h1>"
+    </script>
+    <div id="clock"></div>
+    <script src="countdown.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1 style="text-align: center;">Informes financieros</h1>
+    <h1 style="text-align: center;">campaña electoral 2019</h1>
+    <!--<table style="height: 178px; border-color: #78c1ff; margin-left: auto; margin-right: auto;" border="1" width="147"
+        cellspacing="7" cellpadding="5">-->
+    <table style="height:178px; border-color: #78c1ff; margin-left: auto; margin-right: auto;">
+
+        <!--<style> th, td
+            {
+                border-style: dotted;
+            }
+        </style>-->
+        <colgroup style="background-color: rgb(220, 220, 200);" span="4"></colgroup>
+        <tbody>
+            <tr>
+                <td style="width: 16.6719px;">1</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20BIEN.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">BIEN</a></td>
+                <td>16</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20TODOS.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">TODOS</a></td>
+            </tr>
+            <tr>
+                <td style="width: 16.6719px;">2</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20CREO.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">CREO</a></td>
+                <td>17</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20UCN.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">UCN</a></td>
+            </tr>
+            <tr>
+                <td style="width: 16.6719px;">3</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20EG.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">EG</a></td>
+                <td>18</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20UNE%20I.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">UNE I</a></td>
+            </tr>
+            <tr>
+                <td style="width: 16.6719px;">4</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20MLP.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">MLP</a></td>
+                <td>19</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20UNE%20II.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">UNE II</a></td>
+            </tr>
+            <tr>
+                <td style="width: 16.6719px;">5</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20PC.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">PC</a></td>
+                <td>20</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20UNE%20III.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">UNE III</a></td>
+            </tr>
+            <tr>
+                <td style="width: 16.6719px;">6</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20VALOR.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">VALOR</a></td>
+                <td>21</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20UNIDOS.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">UNIDOS</a></td>
+            </tr>
+            <tr>
+                <td style="width: 16.6719px;">7</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20VAMOS.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">VAMOS</a></td>
+                <td>22</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20UNIONISTA.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">UNIONISTA</a></td>
+            </tr>
+            <tr>
+                <td style="width: 16.6719px;">8</td>
+                <td style="width: 114.328px;"><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20VICTORIA.pdf"
+                        target="_blank" rel="alternate noopener noreferrer">VICTORIA</a></td>
+                <td>23</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20URNG-MAIZ.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">URNG-MAIZ</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20AVANZA.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">AVANZA</a></td>
+                <td>24</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20VIVA.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">VIVA</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20CONVERGENCIA.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">CONVERGENCIA</a></td>
+                <td>25</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20WINAQ.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">WINAQ</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20FCN-NACION.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">FCN-NACION</a></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20PAN.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">PAN</a></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20PHG.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">PHG</a></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20PODEMOS.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">PODEMOS</a></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td><a href="images/UECFFPP/ifce2019/ifce2019/INFOCAMP%202019%20SEMILLA.pdf" target="_blank"
+                        rel="alternate noopener noreferrer">SEMILLA</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1 style="text-align: center;">Informes financieros</h1>
+    <h1 style="text-align: center;">campaña electoral 2023</h1>
+    <table style="border-color: #008aff; width: 567px; margin-left: auto; margin-right: auto;" border="3"
+        cellspacing="7" cellpadding="5">
+        <caption> </caption>
+        <tbody>
+            <tr>
+                <td style="width: 26px; text-align: center;"><strong>1</strong></td>
+                <td style="width: 236px; text-align: left;"><a href="images\UECFFPP\ifce2023\AZUL.pdf" target="_blank"
+                        rel="noopener noreferrer">AZUL</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>16</strong></td>
+                <td style="width: 242.906px; text-align: left;"><a href="images\UECFFPP\ifce2023\SEMILLA.pdf"
+                        target="_blank" rel="noopener noreferrer">SEMILLA</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>2</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\BIEN.pdf" target="_blank"
+                        rel="noopener noreferrer">BIEN</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>17</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\TODOS.pdf" target="_blank"
+                        rel="noopener noreferrer">TODOS</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>3</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\CABAL.pdf" target="_blank"
+                        rel="noopener noreferrer">CABAL</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>18</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\UNE.pdf" target="_blank"
+                        rel="noopener noreferrer">UNE</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>4</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\CAMBIO.pdf" target="_blank"
+                        rel="noopener noreferrer">CAMBIO</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>19</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\UNION REPUBLICANA.pdf" target="_blank"
+                        rel="noopener noreferrer">UNIÓN REPUBLICANA</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>5</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\CREO.pdf" target="_blank"
+                        rel="noopener noreferrer">CREO</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>20</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\UNIONISTA.pdf" target="_blank"
+                        rel="noopener noreferrer">UNIONISTA</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>6</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\ELEFANTE.pdf" target="_blank"
+                        rel="noopener noreferrer">ELEFANTE</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>21</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\URNG-MAÍZ.pdf" target="_blank"
+                        rel="noopener noreferrer">URNG-MAÍZ</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>7</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\FCN NACIÓN.pdf" target="_blank"
+                        rel="noopener noreferrer">FCN NACIÓN</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>22</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\VALOR.pdf" target="_blank"
+                        rel="noopener noreferrer">VALOR</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>8</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\HUMANISTA.pdf" target="_blank"
+                        rel="noopener noreferrer">HUMANISTA</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>23</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\VAMOS.pdf" target="_blank"
+                        rel="noopener noreferrer">VAMOS</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>9</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\MLP -Presentación extemporánea-.pdf"
+                        target="_blank" rel="noopener noreferrer">MLP -Presentación extemporánea-</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>24</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\VICTORIA.pdf" target="_blank"
+                        rel="noopener noreferrer">VICTORIA</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>10</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\NOSOTROS.pdf" target="_blank"
+                        rel="noopener noreferrer">NOSOTROS</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>25</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\VIVA.pdf" target="_blank"
+                        rel="noopener noreferrer">VIVA</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>11</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\PAN.pdf" target="_blank"
+                        rel="noopener noreferrer">PAN</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>26</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\VOS.pdf" target="_blank"
+                        rel="noopener noreferrer">VOS</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>12</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\PC.pdf" target="_blank"
+                        rel="noopener noreferrer">PC</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>27</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\WINAQ -ampliación-.pdf" target="_blank"
+                        rel="noopener noreferrer">WINAQ - ampliación -</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>13</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\PIN.pdf" target="_blank"
+                        rel="noopener noreferrer">PIN</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong>28</strong></td>
+                <td style="width: 242.906px;"><a href="images\UECFFPP\ifce2023\WINAQ.pdf" target="_blank"
+                        rel="noopener noreferrer">WINAQ</a></td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>14</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\PODEMOS.pdf" target="_blank"
+                        rel="noopener noreferrer">PODEMOS</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong> </strong></td>
+                <td style="width: 242.906px;"> </td>
+            </tr>
+            <tr style="text-align: left;">
+                <td style="width: 26px; text-align: center;"><strong>15</strong></td>
+                <td style="width: 236px;"><a href="images\UECFFPP\ifce2023\PODER.pdf" target="_blank"
+                        rel="noopener noreferrer">PODER</a></td>
+                <td style="width: 28.0938px; text-align: center;"><strong> </strong></td>
+                <td style="width: 242.906px;"> </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

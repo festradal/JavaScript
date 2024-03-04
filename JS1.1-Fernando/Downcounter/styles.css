@@ -1,0 +1,20 @@
+div {
+    align-items: center;
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 96px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: rgb(40, 15, 97);
+    border-style: solid;
+    border-radius: 15%;
+}
+
+#stars3::after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 1732px 1727px #fff;
+}
